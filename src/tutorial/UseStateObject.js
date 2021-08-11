@@ -7,7 +7,7 @@ function UseStateObject() {
         message: "I am a god",
     });
     const changeMessage = () => {
-        setPerson("Not Anymore")
+        setPerson({...person, message:"Not Anymore"});
     }
     return (
         <div>
